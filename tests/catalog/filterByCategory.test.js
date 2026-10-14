@@ -14,8 +14,7 @@ describe('filterByCategory', () => {
     const result = filterByCategory(products, undefined);
     expect(result.map(p => p.id)).toEqual(allProductIds);
   });
-
-  test.todo("пустая строка возвращает товары с ID [1, 2, 3, 4, 5, 6]");
+  
   test("пустая строка возвращает товары с ID [1, 2, 3, 4, 5, 6]", () => {
     const result = filterByCategory(products, '');
     expect(result.map(p => p.id)).toEqual(allProductIds);
